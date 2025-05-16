@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #ececec;
+  background-color: white;
+  font-size: 20px;
+  font-weight: 400px;
+  /* min-height: 100vh; */
+  width: 100vw;
+  font-family: "Verlag", sans-rif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --gray-color: #424448;
+  --red-color: #c01b31;
+  --blue-color: #172bc1;
+  --black-color: #010101;
+  --white-color: #ececec;
+  --green-color: #00867c;
+  --pink-color: #eb569f;
+  --app-pink-color: #ffc9e5;
+}
+sup {
+  font-size: 12px;
+}
+ul {
+  text-align: justify;
+}

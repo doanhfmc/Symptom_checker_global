@@ -1,0 +1,102 @@
+/* 📜 Reset cơ bản để tránh lỗi hiển thị */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* 🎯 Cấu trúc layout chính */
+#root {
+  display: flex;
+  flex-direction: column;
+  /* min-height: 100dvh; */
+}
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+/* ✅ Bao quanh phần nội dung và footer */
+.layout_wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  /* min-height: 100dvh; */
+}
+
+/* 🦶 Footer luôn nằm cuối cùng, không bị che và không bay lên */
+.footer_layout {
+  background-color: #424448;
+  text-align: center;
+  color: var(--white-color);
+  border-top: 1px solid #ddd;
+  width: 100vw;
+  min-height: 20vh;
+}
+
+.line_layout {
+  height: 2px;
+  background-color: #ececec;
+
+  margin: 30px 50px 20px 50px;
+}
+.footer_content {
+  padding-bottom: 25px;
+}
+.footer_content p {
+  color: #ececec;
+  line-height: 1.6;
+}
+
+.footer_content .highlight_text {
+  text-decoration: underline;
+  color: #ececec;
+  font-weight: bold;
+}
+.footer_content {
+  padding: 0px 180px;
+}
+/* 📱 Responsive cho mobile */
+
+@media (max-width: 768px) {
+  .layout_wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    /* min-height: 100dvh; */
+  }
+
+  /* 🦶 Footer luôn nằm cuối cùng, không bị che và không bay lên */
+  .footer_layout {
+    background-color: #424448;
+    text-align: center;
+    color: #fff;
+    border-top: 1px solid #ddd;
+    width: 100vw;
+  }
+
+  .line_layout {
+    height: 1px;
+    background-color: #ececec;
+    margin: 20px 5px;
+  }
+
+  .footer_content p {
+    color: #ececec;
+    line-height: 1.6;
+    font-size: 14px;
+    padding-top: 15px;
+    font-weight: 300;
+  }
+
+  .footer_content .highlight_text {
+    text-decoration: underline;
+    color: #ececec;
+    font-weight: bold;
+  }
+  .footer_content {
+    padding: 0px 25px;
+    padding-bottom: 20px;
+  }
+}

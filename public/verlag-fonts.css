@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "Verlag-Book";
+  src: url("/fonts/verlag/Verlag-Book.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Verlag Bold";
+  src: url("/fonts/verlag/Verlag%20Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Verlag-Black";
+  src: url("/fonts/verlag/Verlag-Black.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Verlag-Black";
+  src: url("/fonts/verlag/Verlag-Black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "VerlagCondensed-XLight";
+  src: url("/fonts/verlag/VerlagCondensed-XLight.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "VerlagCondensed-XLight";
+  src: url("/fonts/verlag/VerlagCondensed-XLight.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Verlag-LightItalic";
+  src: url("/fonts/verlag/Verlag-LightItalic.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Verlag-LightItalic";
+  src: url("/fonts/verlag/Verlag-LightItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "VerlagCondensed-Light";
+  src: url("/fonts/verlag/VerlagCondensed-Light.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "VerlagCondensed-Light";
+  src: url("/fonts/verlag/VerlagCondensed-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Verlag-XLight";
+  src: url("/fonts/verlag/Verlag-XLight.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Verlag-XLight";
+  src: url("/fonts/verlag/Verlag-XLight.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Verlag-Light";
+  src: url("/fonts/verlag/Verlag-Light.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Verlag-Light";
+  src: url("/fonts/verlag/Verlag-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "VerlagCompressed-Bold";
+  src: url("/fonts/verlag/VerlagCompressed-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "VerlagCompressed-Bold";
+  src: url("/fonts/verlag/VerlagCompressed-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "VerlagCondensed-Book";
+  src: url("/fonts/verlag/VerlagCondensed-Book.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "VerlagCondensed-Book";
+  src: url("/fonts/verlag/VerlagCondensed-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Verlag-BlackItalic";
+  src: url("/fonts/verlag/Verlag-BlackItalic.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Verlag-BlackItalic";
+  src: url("/fonts/verlag/Verlag-BlackItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

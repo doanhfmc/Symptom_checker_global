@@ -1,0 +1,202 @@
+/* Định dạng tổng thể */
+.quesiton_1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Dàn đều nội dung */
+  align-items: center;
+  margin-top: 20px;
+  /* Chiều cao ít nhất bằng màn hình */
+  background-color: #ffffff;
+}
+
+/* Container chính */
+.container_qs1 {
+  /* max-width: 800px; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  flex-grow: 1; /* Đảm bảo phần này chiếm không gian tối đa */
+  /* position: absolute; */
+}
+.center-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  /* bottom: 40%; */
+  top: 0%;
+}
+/* Tiêu đề */
+.title-container {
+  font-size: 36px !important;
+  font-weight: bold;
+  color: #a11212;
+  margin-bottom: 40px;
+
+  width: 430px;
+  height: 90px;
+}
+
+/* Chứa các thẻ lựa chọn */
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 160px;
+  margin-top: 20px;
+}
+
+/* Thẻ bao quanh mỗi lựa chọn */
+.card-wrapper {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-wrapper:hover {
+  transform: scale(1.05);
+}
+
+/* Thẻ chính */
+.card {
+  width: 330px;
+  height: 247px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 30px;
+  padding: 15px;
+}
+
+.card img {
+  width: 78%;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Văn bản trong thẻ */
+.card p {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333;
+  width: 200px;
+  height: 56px;
+}
+
+/* Phần footer */
+.img_footer {
+  margin-top: 200px;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: contain;
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  /* Định dạng tổng thể */
+  .quesiton_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Dàn đều nội dung */
+    align-items: center;
+    /* Chiều cao ít nhất bằng màn hình */
+    background-color: #ffffff;
+    margin-top: auto;
+  }
+  .center-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  /* Container chính */
+  .container_qs1 {
+    /* max-width: 800px; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    flex-grow: 1; /* Đảm bảo phần này chiếm không gian tối đa */
+    /* position: absolute; */
+  }
+
+  /* Tiêu đề */
+  .title-container {
+    font-size: 30px !important;
+    font-weight: bold;
+    color: #a11212;
+    margin-top: 50px;
+    width: 350px;
+    height: 90px;
+    margin-bottom: 50px;
+  }
+
+  /* Chứa các thẻ lựa chọn */
+  .card-container {
+    display: grid;
+    justify-content: center;
+    flex-direction: row;
+    gap: 80px;
+    margin-top: 0px;
+  }
+
+  /* Thẻ bao quanh mỗi lựa chọn */
+  .card-wrapper {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .card-wrapper:hover {
+    transform: scale(1.05);
+  }
+
+  /* Thẻ chính */
+  .card {
+    width: 330px;
+    height: 247px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+
+    padding: 15px;
+  }
+
+  .card img {
+    width: 65%;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  /* Văn bản trong thẻ */
+  .card p {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+    width: 200px;
+    height: 56px;
+  }
+
+  /* Phần footer */
+  .img_footer {
+    margin-top: 0px;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: contain;
+    background-size: cover;
+  }
+}

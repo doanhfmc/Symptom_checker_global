@@ -1,0 +1,445 @@
+.question_2 {
+  display: flex;
+  flex-direction: column;
+
+  align-items: stretch;
+  justify-content: space-between;
+  font-size: 40px;
+
+  /* position: fixed;
+  top: 50px;
+  left: 50px; */
+}
+
+.question_2 h3 {
+  color: black;
+}
+.question_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.option-container {
+  display: grid;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 40px;
+  margin: 0 auto;
+}
+
+.two-columns {
+  grid-template-columns: repeat(2, 1fr); /* 2 đáp án mỗi hàng */
+  width: 850px;
+}
+
+.three-columns {
+  grid-template-columns: repeat(3, 1fr); /* 3 đáp án mỗi hàng */
+  width: 1250px;
+}
+.one-columns {
+  grid-template-columns: repeat(2, 1fr); /* 2 đáp án mỗi hàng */
+}
+.option {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.option:hover {
+  background-color: #f5f5f5;
+}
+.content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  border: 2px solid #d33;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: white;
+  position: relative;
+  margin-top: 30px;
+  min-height: 260px;
+  width: 400px;
+  font-size: 24px;
+  padding-top: 80px;
+  color: black; /* Để có khoảng cách giữa ảnh và nội dung */
+}
+.activeBG {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  border: 2px solid #d33;
+  border-radius: 30px;
+  padding: 10px;
+  background: linear-gradient(145deg, rgb(160, 30, 20), rgb(230, 60, 50));
+  position: relative;
+  margin-top: 30px;
+  min-height: 250px;
+  width: 400px;
+  font-size: 24px;
+  padding-top: 80px;
+  color: white;
+}
+.activeBG1 {
+  border: 2px solid #d33;
+  border-radius: 30px;
+  padding: 20px;
+  background: linear-gradient(120deg, #bb0900 0%, #ef3022 50%, #bb0900 100%);
+  position: relative;
+  margin-top: 30px;
+  width: 400px;
+  font-size: 24px;
+  min-height: 200px;
+  padding-top: 100px;
+  color: white;
+}
+.content-box1 {
+  border: 2px solid #d33;
+  border-radius: 30px;
+  font-size: 24px;
+  background-color: white;
+  position: relative;
+  margin-top: 30px;
+  width: 400px;
+  min-height: 200px;
+  padding-top: 100px;
+  color: black; /* Để có khoảng cách giữa ảnh và nội dung */
+}
+.content-box3 {
+  border: none;
+  background-color: white;
+}
+
+.activeBG3 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../img/03\ _\ CoB.png");
+}
+.content-box:hover {
+  cursor: pointer;
+}
+.container1 {
+  position: relative;
+  width: 300px;
+  text-align: start;
+  border: none;
+  background: white;
+  font-family: "Verlag", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.container2 {
+  position: relative;
+  width: 250px;
+  text-align: center;
+  border: none;
+  background: white;
+  font-family: "Verlag", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.question {
+  color: var(--black-color);
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+.question-type {
+  color: var(--black-color);
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+.question-option {
+  color: var(--red-color);
+  text-align: center;
+  width: 68vw;
+  font-size: 36px;
+  font-weight: bold;
+}
+.Text_as {
+  height: 110px;
+}
+.content-box:hover {
+  cursor: pointer;
+}
+.content-box1:hover {
+  cursor: pointer;
+}
+.activeBG:hover {
+  cursor: pointer;
+}
+.activeBG1:hover {
+  cursor: pointer;
+}
+.circle-img {
+  width: 151px;
+  height: 151px;
+
+  position: absolute;
+  top: -38px; /* Đưa hình tròn lên cao hơn */
+  left: 78%;
+  transform: translateX(-50%);
+  z-index: 2; /* Đảm bảo ảnh luôn nằm trên viền hộp */
+}
+
+.circle-img1 {
+  width: 151px;
+  height: 151px;
+
+  position: absolute;
+  top: -38px; /* Đưa hình tròn lên cao hơn */
+  left: 66%;
+  transform: translateX(-50%);
+  z-index: 2; /* Đảm bảo ảnh luôn nằm trên viền hộp */
+}
+
+.Ref {
+  color: var(--red-color);
+
+  justify-content: end;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 5px;
+  padding-right: 10px;
+}
+.Ref img {
+  filter: invert(87%) sepia(86%) saturate(3418%) hue-rotate(-4deg)
+    brightness(91%) contrast(102%);
+  width: 15px;
+  height: 10px;
+  margin-bottom: 8px;
+  transform: rotate(180deg);
+}
+.Ref_sel {
+  color: white;
+  display: flex;
+  justify-content: end;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 5px;
+  padding-right: 10px;
+}
+.Ref_sel img {
+  width: 15px;
+  height: 10px;
+  margin-bottom: 8px;
+  transform: rotate(180deg);
+}
+.Line {
+  height: 2px;
+  margin-bottom: 5px;
+  background: var(--black-color);
+  flex: 1;
+}
+.Line_sel {
+  height: 2px;
+  margin-bottom: 5px;
+  background: var(--white-color);
+  flex: 1;
+}
+.Btn_Next {
+  background-color: white;
+  border: none;
+  display: flex;
+  align-items: end;
+  margin-bottom: 20px;
+}
+.Btn_Next img {
+  width: 150px;
+  height: 48px;
+}
+
+.Btn_Next img:hover {
+  cursor: pointer;
+}
+.Next_1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  padding-right: 18vw;
+}
+.show_desc {
+  height: 150px;
+}
+.Container_Q3 img:hover {
+  cursor: pointer;
+}
+/* Table */
+
+/* 📱 Responsive cho Mobile */
+@media (max-width: 768px) {
+  .question_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .question {
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+  .question-option {
+    font-size: 24px;
+    padding-bottom: 10px;
+    width: 93vw;
+  }
+  .question-type {
+    font-size: 24px;
+  }
+  .option-container {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    gap: 40px;
+  }
+  .two-columns {
+    grid-template-columns: none;
+    margin-left: 25px;
+  }
+  .three-columns {
+    grid-template-columns: none;
+    margin-left: 12vw;
+  }
+  .one-columns {
+    grid-template-columns: none;
+  }
+  .container2 {
+    width: 70vw;
+  }
+  .content-box1 {
+    display: flex;
+    align-items: center;
+    width: 70vw;
+    min-height: 100px;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 0px;
+    justify-content: center;
+    padding-left: 30px;
+    margin-top: 5px;
+  }
+  .activeBG1 {
+    display: flex;
+    align-items: center;
+    width: 70vw;
+    min-height: 100px;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 0px;
+    justify-content: center;
+    margin-top: 5px;
+    font-size: 16px;
+    padding: 0px 0px 0px 30px;
+  }
+  .container1 {
+    width: 75vw;
+  }
+  .content-box1 {
+    font-size: 16px;
+  }
+  .content-box {
+    display: flex;
+
+    width: 80vw;
+    min-height: 140px;
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-left: 90px;
+  }
+  .activeBG {
+    display: flex;
+
+    width: 80vw;
+    min-height: 140px;
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-left: 90px;
+  }
+  .Text_as {
+    height: 95px;
+  }
+  .Text_as p {
+    font-size: 16px;
+  }
+  .Text1 {
+    width: 45vw;
+  }
+  .circle-img {
+    width: 115px;
+    height: 115px;
+    top: -1.5px;
+    left: 0px;
+  }
+  .Next_1 {
+    margin-top: -20px;
+  }
+  .circle-img1 {
+    width: 165px;
+    height: 165px;
+    top: 21px;
+    left: 0px;
+  }
+  .Ref {
+    padding-top: 5px;
+    font-size: 14px;
+    gap: 2px;
+  }
+  .Ref img {
+    margin-bottom: 3px;
+  }
+  .Ref_sel {
+    font-size: 14px;
+    padding-top: 5px;
+  }
+  .Ref_sel img {
+    margin-bottom: 3px;
+  }
+  .Line {
+    height: 1px;
+    margin-right: 50px;
+  }
+  .Line_sel {
+    height: 1px;
+    margin-right: 50px;
+  }
+  .show_desc {
+    height: auto;
+  }
+  .show_desc p {
+    font-size: 8px;
+  }
+  .Q3 {
+    display: flex;
+    flex-direction: row !important;
+  }
+  .Next_1 {
+    padding-right: 16vw;
+  }
+  .Btn_Next img {
+    width: 110px;
+    height: 37px;
+  }
+  .Container_Q3 img {
+    width: 220px;
+    height: 220px;
+  }
+}
