@@ -26,15 +26,15 @@ const Result1Op = () => {
           <div className="text_result_container">
             {" "}
             <span className="text_result_123">
-              Dựa trên triệu chứng bạn mô tả, bạn có thể đang bị{" "}
+              Based on the symptoms you described, you may have{" "}
             </span>
-            <p className="text3_result1">NHIỄM NẤM ÂM ĐẠO</p>
+            <p className="text3_result1">VULVOVAGINAL CANDIDIASIS</p>
             <a
               href="https://www.canesten.com.vn/moi-dieu-ban-can-biet-ve-benh-nhiem-nam-am-dao"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={CTA} alt="NHIỄM NẤM ÂM ĐẠO" />
+              <img src={CTA} alt="VULVOVAGINAL CANDIDIASIS" />
             </a>
           </div>
         </div>
@@ -44,20 +44,18 @@ const Result1Op = () => {
             <img src={icon_center} alt="NHIỄM NẤM ÂM ĐẠO" />
           </div>
           <div className="text_rightRS">
-            <p className="text1_center">BẠN CÓ BIẾT?</p>
+            <p className="text1_center">DO YOU KNOW?</p>
 
             <p className="text2_center">
               <span>
-                Có đến
                 <span style={{ fontWeight: 600 }}>
                   {" "}
-                  70-75% phụ nữ trong độ tuổi sinh sản bị nhiễm nấm âm đạo ít
-                  nhất một lần trong đời.
+                  70-75% of women of reproductive age experience Vulvovaginal
+                  Candidiasis (VVC) at least once in their life,
                 </span>{" "}
-                40-45% bệnh nhân bị tái phát ít nhất 1 lần/ năm và 5-8% phát
-                triển thành viêm âm đạo dai dẳng (≥ 4 lần/ năm)<sup>2</sup>.
-                Đừng lo lắng, hãy tìm hiểu và thăm khám để có giải pháp phù hợp
-                nhé!
+                hich can be difficult to treat as 40-45% recur at least once and
+                5-8% of patients develop persistent vaginitis (≥ 4 times/year)
+                <sup>2</sup>.
               </span>
             </p>
             <p className="text3_center">
@@ -70,13 +68,13 @@ const Result1Op = () => {
             {isOpen ? (
               <div className="Dropdown_result3">
                 <p style={{ background: "#172bc1" }}>
-                  XEM LẠI CÂU TRẢ LỜI <img src={arrow} alt="NHIỄM NẤM ÂM ĐẠO" />{" "}
+                  REVIEW YOUR ANSWERS <img src={arrow} alt="NHIỄM NẤM ÂM ĐẠO" />{" "}
                 </p>
               </div>
             ) : (
               <div className="Dropdown_result4">
                 <p style={{ background: "#172bc1" }}>
-                  XEM LẠI CÂU TRẢ LỜI <img src={arrow} alt="NHIỄM NẤM ÂM ĐẠO" />{" "}
+                  REVIEW YOUR ANSWERS <img src={arrow} alt="NHIỄM NẤM ÂM ĐẠO" />{" "}
                 </p>
               </div>
             )}
@@ -103,10 +101,10 @@ const Result1Op = () => {
                         padding: "0",
                       }}
                     >
-                      <div className="Drop_As" style={{ paddingTop: 10 }}>
+                      <div className="Drop_As5" style={{ paddingTop: 10 }}>
                         <div className="question_Drop">
                           <span className="Queston_Drop" style={{}}>
-                            Câu hỏi {index + 1}:{" "}
+                            Question {index + 1}:{" "}
                           </span>
                           <span className="Queston_Drop_Title2" style={{}}>
                             {item.questionText || "Không có dữ liệu"}
@@ -114,7 +112,7 @@ const Result1Op = () => {
                         </div>
                         <div className="Answer_Drop2" style={{}}>
                           <span style={{ fontWeight: "normal" }}>
-                            <strong>Bạn trả lời: </strong>
+                            <strong> Your Answers: </strong>
                             {item.selectedAnswers2.join(". ") ||
                               "Chưa chọn đáp án"}
 

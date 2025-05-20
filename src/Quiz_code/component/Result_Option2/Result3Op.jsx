@@ -26,15 +26,15 @@ const Result3Op = () => {
           <div className="text_result_container">
             {" "}
             <span className="text_result_123">
-              Dựa trên triệu chứng bạn mô tả, bạn có thể đang bị{" "}
+              Based on the symptoms you described, you may have{" "}
             </span>
-            <p className="text3_result1">NHIỄM TRÙNG ĐƯỜNG TIỂU</p>
+            <p className="text3_result1">URINARY TRACT INFECTIONS</p>
             <a
               href="https://www.canesten.com.vn/moi-dieu-can-biet-ve-nhiem-trung-duong-tieu"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={CTA} alt="NHIỄM TRÙNG NƯỚC TIỂU" />
+              <img src={CTA} alt="URINARY TRACT INFECTIONS" />
             </a>
           </div>
         </div>
@@ -44,14 +44,14 @@ const Result3Op = () => {
             {isOpen ? (
               <div className="Dropdown_result3">
                 <p style={{ background: "#172bc1" }}>
-                  XEM LẠI CÂU TRẢ LỜI{" "}
+                  REVIEW YOUR ANSWERS{" "}
                   <img src={arrow} alt="NHIỄM TRÙNG NƯỚC TIỂU" />{" "}
                 </p>
               </div>
             ) : (
               <div className="Dropdown_result4">
                 <p style={{ background: "#172bc1" }}>
-                  XEM LẠI CÂU TRẢ LỜI{" "}
+                  REVIEW YOUR ANSWERS{" "}
                   <img src={arrow} alt="NHIỄM TRÙNG NƯỚC TIỂU" />{" "}
                 </p>
               </div>
@@ -79,10 +79,10 @@ const Result3Op = () => {
                         padding: "0",
                       }}
                     >
-                      <div className="Drop_As" style={{ paddingTop: 10 }}>
+                      <div className="Drop_As5" style={{ paddingTop: 10 }}>
                         <div className="question_Drop">
                           <span className="Queston_Drop" style={{}}>
-                            Câu hỏi {index + 1}:{" "}
+                            Question {index + 1}:{" "}
                           </span>
                           <span className="Queston_Drop_Title2" style={{}}>
                             {item.questionText || "Không có dữ liệu"}
@@ -90,7 +90,7 @@ const Result3Op = () => {
                         </div>
                         <div className="Answer_Drop2" style={{}}>
                           <span style={{ fontWeight: "normal" }}>
-                            <strong>Bạn trả lời: </strong>
+                            <strong>Your Answers: </strong>
                             {item.selectedAnswers2.join(". ") ||
                               "Chưa chọn đáp án"}
 

@@ -26,33 +26,32 @@ const Result2Op = () => {
           <div className="text_result_container">
             {" "}
             <span className="text_result_123">
-              Dựa trên triệu chứng bạn mô tả, bạn có thể đang bị{" "}
+              Based on the symptoms you described, you may have{" "}
             </span>
-            <p className="text2_result">VIÊM ÂM ĐẠO DO VI KHUẨN</p>
+            <p className="text2_result">BACTERIAL VAGINOSIS</p>
             <a
               href="https://www.canesten.com.vn/moi-dieu-can-biet-ve-viem-am-dao-do-vi-khuan"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={CTA} alt="VIÊM ÂM ĐẠO DO VI KHUẨN" />
+              <img src={CTA} alt="BACTERIAL VAGINOSIS" />
             </a>
           </div>
         </div>
         <div className="center_container2">
           <div className="img_leftRS">
             {" "}
-            <img src={icon_center} alt="VIÊM ÂM ĐẠO DO VI KHUẨN" />
+            <img src={icon_center} alt="BACTERIAL VAGINOSIS" />
           </div>
           <div className="text_rightRS">
-            <p className="text1_center">BẠN CÓ BIẾT?</p>
+            <p className="text1_center">DO YOU KNOW?</p>
 
             <p className="text2_center">
-              Viêm âm đạo do vi khuẩn là{" "}
+              Bacterial Vagisnosis (BV) is a{" "}
               <span style={{ fontWeight: 600 }}>
-                tình trạng phổ biến và là nguyên nhân thường gặp nhất
+                highly prevalent condition and the most common cause
               </span>{" "}
-              gây ra tình trạng khí hư bất thường<sup>3</sup>. Đừng lo lắng, hãy
-              tìm hiểu và thăm khám để có giải pháp phù hợp nhé!
+              of vaginal discharge worldwide.<sup>3</sup>
             </p>
             <p className="text3_center">
               3.{" "}
@@ -71,14 +70,14 @@ const Result2Op = () => {
             {isOpen ? (
               <div className="Dropdown_result3">
                 <p style={{ background: "#172bc1" }}>
-                  XEM LẠI CÂU TRẢ LỜI{" "}
+                  REVIEW YOUR ANSWERS{" "}
                   <img src={arrow} alt="VIÊM ÂM ĐẠO DO VI KHUẨN" />{" "}
                 </p>
               </div>
             ) : (
               <div className="Dropdown_result4">
                 <p style={{ background: "#172bc1" }}>
-                  XEM LẠI CÂU TRẢ LỜI{" "}
+                  REVIEW YOUR ANSWERS{" "}
                   <img src={arrow} alt="VIÊM ÂM ĐẠO DO VI KHUẨN" />{" "}
                 </p>
               </div>
@@ -106,10 +105,10 @@ const Result2Op = () => {
                         padding: "0",
                       }}
                     >
-                      <div className="Drop_As" style={{ paddingTop: 10 }}>
+                      <div className="Drop_As5" style={{ paddingTop: 10 }}>
                         <div className="question_Drop">
                           <span className="Queston_Drop" style={{}}>
-                            Câu hỏi {index + 1}:{" "}
+                            Question {index + 1}:{" "}
                           </span>
                           <span className="Queston_Drop_Title2" style={{}}>
                             {item.questionText || "Không có dữ liệu"}
@@ -117,7 +116,7 @@ const Result2Op = () => {
                         </div>
                         <div className="Answer_Drop2" style={{}}>
                           <span style={{ fontWeight: "normal" }}>
-                            <strong>Bạn trả lời: </strong>
+                            <strong>Your Answers: </strong>
                             {item.selectedAnswers2.join(". ") ||
                               "Chưa chọn đáp án"}
 

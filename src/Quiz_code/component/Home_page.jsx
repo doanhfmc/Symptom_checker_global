@@ -13,9 +13,9 @@ const Home_page = () => {
             <div className="footer_first_content">
               <p>
                 Welcome to your personal{" "}
-                <strong>Canesten® Symptom Checker.</strong>Experiencing itching,
-                discomfort and soreness? Wondering what it might be, or just
-                want some information and treatment options?
+                <strong>Canesten® Symptom Checker.</strong> Experiencing
+                itching, discomfort and soreness? Wondering what it might be, or
+                just want some information and treatment options?
                 <br />
                 <br />
                 The <strong>Canesten® Symptom Checker</strong> swill help you

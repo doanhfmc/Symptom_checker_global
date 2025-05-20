@@ -277,6 +277,9 @@
 .show_desc {
   height: 150px;
 }
+.text_Ref_Eng {
+  margin-top: 25px;
+}
 .Container_Q3 img:hover {
   cursor: pointer;
 }
@@ -426,6 +429,9 @@
   }
   .show_desc p {
     font-size: 8px;
+  }
+  .text_Ref_Eng {
+    margin-top: 12px;
   }
   .Q3 {
     display: flex;

@@ -26,11 +26,12 @@ const Result4Op = () => {
           <div className="text_result_container">
             {" "}
             <span className="text_result">
-              Triệu chứng của bạn có thể liên quan đến
+              The symptoms you described could be any of the following
+              conditions
             </span>
-            <p className="text5_result">VIÊM ÂM ĐẠO DO VI KHUẨN,</p>
-            <p className="text3_result">VIÊM ÂM ĐẠO DO NẤM,</p>
-            <p className="text4_result">NHIỄM TRÙNG ĐƯỜNG TIỂU</p>
+            <p className="text5_result">BACTERIAL VAGINOSIS,</p>
+            <p className="text3_result">VULVOVAGINAL CANDIDIASIS,</p>
+            <p className="text4_result">URINARY TRACT INFECTIONS</p>
             <a
               href="https://www.canesten.com.vn/viem-nhiem-vung-kin "
               target="_blank"
@@ -46,7 +47,7 @@ const Result4Op = () => {
             {isOpen ? (
               <div className="Dropdown_result3">
                 <p style={{ background: "#172bc1" }}>
-                  XEM LẠI CÂU TRẢ LỜI{" "}
+                  REVIEW YOUR ANSWERS{" "}
                   <img
                     src={arrow}
                     alt="VIÊM ÂM ĐẠO DO VI KHUẨN, VIÊM NẤM ÂM ĐẠO"
@@ -56,7 +57,7 @@ const Result4Op = () => {
             ) : (
               <div className="Dropdown_result4">
                 <p style={{ background: "#172bc1" }}>
-                  XEM LẠI CÂU TRẢ LỜI{" "}
+                  REVIEW YOUR ANSWERS{" "}
                   <img
                     src={arrow}
                     alt="VIÊM ÂM ĐẠO DO VI KHUẨN, VIÊM NẤM ÂM ĐẠO"
@@ -87,10 +88,10 @@ const Result4Op = () => {
                         padding: "0",
                       }}
                     >
-                      <div className="Drop_As" style={{ paddingTop: 10 }}>
+                      <div className="Drop_As5" style={{ paddingTop: 10 }}>
                         <div className="question_Drop">
                           <span className="Queston_Drop" style={{}}>
-                            Câu hỏi {index + 1}:{" "}
+                            Question {index + 1}:{" "}
                           </span>
                           <span className="Queston_Drop_Title2" style={{}}>
                             {item.questionText || "Không có dữ liệu"}
@@ -98,7 +99,7 @@ const Result4Op = () => {
                         </div>
                         <div className="Answer_Drop2" style={{}}>
                           <span style={{ fontWeight: "normal" }}>
-                            <strong>Bạn trả lời: </strong>
+                            <strong>Your Answers: </strong>
                             {item.selectedAnswers2.join(". ") ||
                               "Chưa chọn đáp án"}
 

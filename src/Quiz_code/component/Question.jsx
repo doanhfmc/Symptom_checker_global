@@ -197,12 +197,12 @@ function Question({ condition }) {
                       {option?.text}
                     </div>
                     <div
+                      className="text_Ref_Eng"
                       style={{
                         display: "flex",
                         justifyContent: "flex-end",
                         alignItems: "start",
 
-                        marginTop: 25,
                         flexDirection: "column",
                         position: "relative",
                       }}

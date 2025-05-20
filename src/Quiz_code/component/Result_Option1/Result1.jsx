@@ -17,30 +17,30 @@ const sliderData = [
   {
     title: (
       <p>
-        Chàm (Eczema)<sup style={{ fontSize: 12 }}>1,2</sup>
+        Eczema <sup style={{ fontSize: 12 }}>1,2</sup>
       </p>
     ),
     description: (
       <ul
         style={{
           margin: "20px",
+          textAlign: "left",
         }}
       >
         <li>
-          Mảng da đỏ hình tròn như đồng xu{" "}
-          <sup style={{ fontSize: 12 }}>1,2</sup>.{" "}
+          Red coin-shaped plaques <sup style={{ fontSize: 12 }}>1,2</sup>.{" "}
         </li>
         <li>
-          Thường không có vùng lành ở giữa<sup style={{ fontSize: 12 }}>2</sup>.
+          Most lack central clearing<sup style={{ fontSize: 12 }}>2</sup>.
         </li>
         <li>
           {" "}
-          Da xung quanh có thể sẫm màu hơn
+          Coexisting hyperpigmentation
           <sup style={{ fontSize: 12 }}>2</sup>.
         </li>
 
         <li>
-          Vị trí thường gặp: cẳng chân, mu bàn tay và mặt ngoài cánh tay{" "}
+          Commonly appears on lower legs, dorsal hands, extensor surface of arms{" "}
           <sup style={{ fontSize: 12 }}>2</sup>.
         </li>
       </ul>
@@ -66,18 +66,21 @@ const sliderData = [
   {
     title: (
       <p>
-        Viêm da tiết bã <sup style={{ fontSize: 12 }}>3</sup>
+        Seborrheic dermatitis<sup style={{ fontSize: 12 }}>3</sup>
       </p>
     ),
     description: (
-      <ul style={{ margin: "20px", textAlign: "justify" }}>
+      <ul style={{ margin: "20px", textAlign: "left" }}>
         <li>
-          Da có vảy nhờn, cứng, thường ở đỉnh đầu và vùng trán. Ở trẻ sơ sinh:
-          vảy màu vàng ánh bạc. Ở người lớn: nốt đỏ kèm vảy trắng bạc.
+          Firm, greasy, scales on the crown and frontal regions of the scalp.
         </li>
         <li>
-          Thường xuất hiện ở các vùng có nhiều tuyến dầu như: da đầu, mặt và
-          vùng tã lót.
+          Yellowish-silvery scales in infants and red papules with silvery
+          scales in adults.
+        </li>
+        <li>
+          Commonly occurs in regions where sebaceous glands are present, such as
+          the scalp, face and diaper area.
         </li>
       </ul>
     ),
@@ -155,16 +158,16 @@ function Result1() {
         <div className="section_left">
           {" "}
           <p className="tilte_sick" style={{}}>
-            Có thể bạn đang gặp bệnh
+            Based on the symptoms you described, you may have
           </p>
           <p className="sick" style={{}}>
-            NẤM DA LIÊN QUAN ĐẾN ĐỘNG VẬT NUÔI
+            PET-RELATED SKIN FUNGUS INFECTION
           </p>
           <a
             href="https://www.canesten.com.vn/moi-dieu-ban-can-biet-ve-nam-da-do-thu-cung"
             target="blank"
           >
-            <img src={Btn_Sol} alt="NẤM DA LIÊN QUAN ĐẾN ĐỘNG VẬT NUÔI" />{" "}
+            <img src={Btn_Sol} alt="PET-RELATED SKIN FUNGUS INFECTION" />{" "}
           </a>
         </div>
       </section>
@@ -172,10 +175,11 @@ function Result1() {
       {/* Slider Section */}
       <section className="slider">
         <p className="content_1" style={{}}>
-          BẠN CÓ BIẾT?
+          DO YOU KNOW?
         </p>
         <p className="content_2" style={{}}>
-          Sự khác biệt giữa Nhiễm nấm da do thú cưng và các bệnh ngoài da khác:
+          Difference between Pet-related fungal infection & other skin
+          infections:
         </p>
 
         <div className="slider-container">
@@ -216,14 +220,14 @@ function Result1() {
           {isOpen ? (
             <div className="Dropdown_result1">
               <p style={{ background: "#172bc1" }}>
-                XEM LẠI CÂU TRẢ LỜI{" "}
+                REVIEW YOUR ANSWERS{" "}
                 <img src={arrow} alt="NẤM DA LIÊN QUAN ĐẾN ĐỘNG VẬT NUÔI" />{" "}
               </p>
             </div>
           ) : (
             <div className="Dropdown_result2">
               <p style={{ background: "#172bc1" }}>
-                XEM LẠI CÂU TRẢ LỜI{" "}
+                REVIEW YOUR ANSWERS{" "}
                 <img src={arrow} alt="NẤM DA LIÊN QUAN ĐẾN ĐỘNG VẬT NUÔI" />{" "}
               </p>
             </div>
@@ -253,7 +257,7 @@ function Result1() {
                     <div className="Drop_As" style={{}}>
                       <div className="question_Drop">
                         <span className="Queston_Drop" style={{}}>
-                          Câu hỏi {index + 1}:{" "}
+                          Question {index + 1}:{" "}
                         </span>
                         <span className="Queston_Drop_Title" style={{}}>
                           {item.questionText || "Không có dữ liệu"}
@@ -261,7 +265,7 @@ function Result1() {
                       </div>
                       <div className="Answer_Drop" style={{}}>
                         <span style={{ fontWeight: "normal" }}>
-                          <strong>Bạn trả lời: </strong>
+                          <strong>Your Answers: </strong>
                           {index !== 1 &&
                             questionsData.skin
                               .filter((item_) => item_.id === index + 1)[0]

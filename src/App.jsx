@@ -21,7 +21,7 @@ import Result4Op from "./Quiz_code/component/Result_Option2/Result4Op.jsx";
 import GAListener from "./Quiz_code/component/GAListener";
 import ScrollToTop from "./Quiz_code/component/scroll.js";
 
-ReactGA.initialize("G-4JCDQNL412");
+
 const App = () => {
   return (
     <HashRouter>

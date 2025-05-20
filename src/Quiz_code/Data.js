@@ -229,8 +229,8 @@ export const questionsData = {
       text: "Do you have close contact with animals/ pets  (Cat, Rabbit, Porcupine, Dog) recently? (Y/N) ",
       type: "",
       options: [
-        { _id: 30, text: "Có", img: img30 },
-        { _id: 31, text: "Không", img: img31 },
+        { _id: 30, text: "Yes", img: img30 },
+        { _id: 31, text: "No", img: img31 },
       ],
     },
   ],
@@ -305,7 +305,7 @@ export const questionsData = {
         },
         {
           _id: 45,
-          text: "Đỏ nâu vón cục",
+          text: "Clot reddish - brown",
           img: img245,
           ref: "(not on period)",
         },
@@ -317,8 +317,8 @@ export const questionsData = {
       text: " Do you have fever? ",
       type: "Single choice",
       options: [
-        { _id: 50, text: "Có", img: YesQ2 },
-        { _id: 51, text: "Không", img: NoQ2 },
+        { _id: 50, text: "Yes", img: YesQ2 },
+        { _id: 51, text: "No", img: NoQ2 },
       ],
     },
     {
@@ -327,8 +327,8 @@ export const questionsData = {
       text: "Do you feel pain in the lower abdomen? ",
       type: "Single choice",
       options: [
-        { _id: 60, text: "Có", img: YesQ2 },
-        { _id: 61, text: "Không", img: NoQ2 },
+        { _id: 60, text: "Yes", img: YesQ2 },
+        { _id: 61, text: "No", img: NoQ2 },
       ],
     },
 
@@ -338,8 +338,8 @@ export const questionsData = {
       text: "Do your frequency of urination increase?  ",
       type: "Single choice",
       options: [
-        { _id: 70, text: "Có", img: YesQ2 },
-        { _id: 71, text: "Không", img: NoQ2 },
+        { _id: 70, text: "Yes", img: YesQ2 },
+        { _id: 71, text: "No", img: NoQ2 },
       ],
     },
     {

@@ -15,24 +15,23 @@ import { questionsData } from "../../Data.js";
 
 const sliderData = [
   {
-    title: <p className="Title6">Bệnh viêm da nếp kẽ</p>,
+    title: <p className="Title6">Erythrasma </p>,
     description: (
       <ul
         style={{
           margin: "20px",
-          textAlign: "justify",
+          textAlign: "left",
         }}
       >
         <li>
-          Bệnh viêm da nếp kẽ do vi khuẩn là một dạng nhiễm khuẩn da thường gặp
-          ở người lớn<sup style={{ fontSize: 12 }}>12</sup>, đặc biệt trong điều
-          kiện thời tiết nóng ẩm. Bệnh phổ biến hơn ở những người: Béo phì, Tiểu
-          đường, Người cao tuổi
+          Erythrasma is a bacterial infection typically affects adults
+          <sup style={{ fontSize: 12 }}>12</sup>and is associated with hot,
+          humid climate; more common in obese, diabetic and elderly individuals
           <sup style={{ fontSize: 12 }}>12,13</sup>{" "}
         </li>
         <li style={{ paddingTop: "4px" }}>
-          Bệnh Viêm da nếp kẽ do vi khuẩn có thể lan sang các vùng da khác trên
-          cơ thể nếu không được điều trị<sup style={{ fontSize: 12 }}>13</sup>.
+          Erythrasma can spread to other parts of the body
+          <sup style={{ fontSize: 12 }}>13</sup>.
         </li>
       </ul>
     ),
@@ -55,18 +54,17 @@ const sliderData = [
   {
     title: (
       <p className="Title6">
-        Cách phòng ngừa bệnh Viêm da nếp kẽ{" "}
-        <sup style={{ fontSize: 12 }}>13</sup>
+        CTo prevent Erythrasma <sup style={{ fontSize: 12 }}>13</sup>
       </p>
     ),
     description: (
       <ul style={{ margin: "20px", textAlign: "justify" }}>
-        <li>Tập thể dục thường xuyên và duy trì cân nặng hợp lý.</li>
-        <li>Mặc quần áo thoáng mát, chất liệu cotton.</li>
-        <li>Giữ vệ sinh cá nhân sạch sẽ.</li>
+        <li>Exercising frequently and losing excess weight.</li>
+        <li>Wearing light, cotton clothing.</li>
+        <li>Maintaining good personal hygiene.</li>
 
-        <li>Giữ cho vùng nếp gấp da luôn khô thoáng.</li>
-        <li>Hạn chế ăn thực phẩm chứa nhiều đường.</li>
+        <li>Keeping skin folds dry.</li>
+        <li>Limiting intake of sugary foods.</li>
       </ul>
     ),
     ref: (
@@ -143,20 +141,22 @@ function Result6() {
         </div>
         <div className="section_left">
           {" "}
-          <p className="tilte_sick">Có thể bạn đang gặp bệnh</p>
-          <p className="sick">VIÊM DA NẾP KẼ DO VI KHUẨN</p>
+          <p className="tilte_sick">
+            Based on the symptoms you described, you may have
+          </p>
+          <p className="sick">ERYTHRASMA</p>
           <a
             href="https://www.canesten.com.vn/moi-dieu-ban-can-biet-ve-ham-ke-do-vi-khuan"
             target="blank"
           >
-            <img src={Btn_Sol} alt="VIÊM DA NẾP KẼ DO VI KHUẨN" />{" "}
+            <img src={Btn_Sol} alt="ERYTHRASMA" />{" "}
           </a>
         </div>
       </section>
 
       {/* Slider Section */}
       <section className="slider">
-        <p className="content_1">BẠN CÓ BIẾT?</p>
+        <p className="content_1">DO YOU KNOW?</p>
         <p className="content_2"></p>
 
         <div className="slider-container">
@@ -191,14 +191,14 @@ function Result6() {
           {isOpen ? (
             <div className="Dropdown_result1">
               <p style={{ background: "#172bc1" }}>
-                XEM LẠI CÂU TRẢ LỜI{" "}
+                REVIEW YOUR ANSWERS{" "}
                 <img src={arrow} alt="VIÊM DA NẾP KẼ DO VI KHUẨN" />{" "}
               </p>
             </div>
           ) : (
             <div className="Dropdown_result2">
               <p style={{ background: "#172bc1" }}>
-                XEM LẠI CÂU TRẢ LỜI{" "}
+                REVIEW YOUR ANSWERS{" "}
                 <img src={arrow} alt="VIÊM DA NẾP KẼ DO VI KHUẨN" />{" "}
               </p>
             </div>
@@ -228,7 +228,7 @@ function Result6() {
                     <div className="Drop_As">
                       <div className="question_Drop">
                         <span className="Queston_Drop" style={{}}>
-                          Câu hỏi {index + 1}:{" "}
+                          Question {index + 1}:{" "}
                         </span>
                         <span className="Queston_Drop_Title" style={{}}>
                           {item.questionText || "Không có dữ liệu"}
@@ -236,7 +236,7 @@ function Result6() {
                       </div>
                       <div className="Answer_Drop" style={{}}>
                         <span style={{ fontWeight: "normal" }}>
-                          <strong>Bạn trả lời: </strong>
+                          <strong>Your Answers: </strong>
                           {index !== 1 &&
                             questionsData.skin
                               .filter((item_) => item_.id === index + 1)[0]
@@ -263,9 +263,7 @@ function Result6() {
                   </div>
                 ))
               ) : (
-                <p style={{ textAlign: "center", padding: "20px" }}>
-                  Không có dữ liệu để hiển thị.
-                </p>
+                <p style={{ textAlign: "center", padding: "20px" }}>NO</p>
               )}
             </div>
           )}

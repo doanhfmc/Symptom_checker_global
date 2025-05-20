@@ -18,23 +18,22 @@ const sliderData = [
   {
     title: (
       <p>
-        Vảy phấn hồng<sup style={{ fontSize: 12 }}>1,2</sup>
+        Pityriasis rosea<sup style={{ fontSize: 12 }}>1,2</sup>
       </p>
     ),
     description: (
       <ul
         style={{
           margin: "20px",
-          textAlign: "justify",
+          textAlign: "left",
         }}
       >
-        <li>Da nổi các mảng hồng, có vảy nhẹ . </li>
+        <li>Scaly pink eruptions. </li>
+        <li>Begins as herald patch followed by a more generalised rash.</li>
+        <li> May have "Christmas-tree" appearance.</li>
         <li>
-          Ban đầu xuất hiện mảng lớn rõ ràng, sau đó lan rộng thành nhiều mảng
-          nhỏ.
+          Commonly appears first on the trunk, neck, and proximal extremities.
         </li>
-        <li> Thường tạo hình cây thông Noel trên thân mình.</li>
-        <li>Vị trí thường gặp: thân, cổ và vùng gần các chi.</li>
       </ul>
     ),
     img: thumbslide1,
@@ -62,19 +61,19 @@ const sliderData = [
   {
     title: (
       <p>
-        Vảy nến thể giọt <sup style={{ fontSize: 12 }}>5</sup>
+        Guttate psoriasis <sup style={{ fontSize: 12 }}>5</sup>
       </p>
     ),
     description: (
-      <ul style={{ margin: "20px", textAlign: "justify" }}>
-        <li>Các nốt nhỏ hình giọt nước xuất hiện trên da.</li>
+      <ul style={{ margin: "20px", textAlign: "left" }}>
+        <li>Small drop-like lesions.</li>
         <li>
-          Kèm các dấu hiệu như: lớp biểu bì dày lên, mạch máu bề mặt giãn nở và
-          vảy da.
+          Elongation of the dermal papillae, dilated superficial blood vessels,
+          hypergranulosis, and parakeratosis.
         </li>
         <li>
-          Thường có tiền sử nhiễm liên cầu khuẩn, như viêm họng hoặc nhiễm khuẩn
-          quanh hậu môn.
+          Previous history of streptococcal infection, typically pharyngitis or
+          perianal streptococcus.
         </li>
       </ul>
     ),
@@ -94,18 +93,19 @@ const sliderData = [
   {
     title: (
       <p>
-        Bạch biến <sup style={{ fontSize: 12 }}>3,4</sup>
+        Vitiligo <sup style={{ fontSize: 12 }}>3,4</sup>
       </p>
     ),
     description: (
-      <ul style={{ margin: "20px", textAlign: "justify" }}>
+      <ul style={{ margin: "20px", textAlign: "left" }}>
         <li>
-          Mất sắc tố da, tạo thành các đốm trắng nhạt, không có vảy, có viền rõ
-          ràng so với vùng da thường<sup style={{ fontSize: 12 }}>3</sup>.
+          Loss of melanocytes from the skin, leading to non-scaly, chalky-white
+          patches/spots with distinct margins
+          <sup style={{ fontSize: 12 }}>3</sup>.
         </li>
         <li>
-          Thường xuất hiện đầu tiên ở: ngón tay, khớp ngón, quanh mắt, miệng,
-          bàn chân và vùng kín<sup style={{ fontSize: 12 }}>4</sup>.
+          First noted on the fingers, knuckles, around eyes and mouth, and on
+          feet and genitalia<sup style={{ fontSize: 12 }}>4</sup>.
         </li>
       </ul>
     ),
@@ -177,8 +177,10 @@ function Result5() {
         </div>
         <div className="section_left">
           {" "}
-          <p className="tilte_sick">Có thể bạn đang gặp bệnh</p>
-          <p className="sick">LANG BEN</p>
+          <p className="tilte_sick">
+            Based on the symptoms you described, you may have
+          </p>
+          <p className="sick">PITYRIASIS VERSICOLOR</p>
           <a
             href="https://www.canesten.com.vn/Moi-dieu-ban-can-biet-ve-benh-lang-ben"
             target="blank"
@@ -190,9 +192,9 @@ function Result5() {
 
       {/* Slider Section */}
       <section className="slider">
-        <p className="content_1">BẠN CÓ BIẾT?</p>
+        <p className="content_1">DO YOU KNOW?</p>
         <p className="content_2">
-          Sự khác biệt giữa Lang ben và các bệnh ngoài da tương tự:
+          Difference between Pityriasis Versicolor & "lookalike" conditions:
         </p>
 
         <div className="slider-container_3">
@@ -227,13 +229,13 @@ function Result5() {
           {isOpen ? (
             <div className="Dropdown_result1">
               <p style={{ background: "#172bc1" }}>
-                XEM LẠI CÂU TRẢ LỜI <img src={arrow} alt="LANG BEN" />{" "}
+                REVIEW YOUR ANSWERS <img src={arrow} alt="LANG BEN" />{" "}
               </p>
             </div>
           ) : (
             <div className="Dropdown_result2">
               <p style={{ background: "#172bc1" }}>
-                XEM LẠI CÂU TRẢ LỜI <img src={arrow} alt="LANG BEN" />{" "}
+                REVIEW YOUR ANSWERS <img src={arrow} alt="LANG BEN" />{" "}
               </p>
             </div>
           )}
@@ -262,7 +264,7 @@ function Result5() {
                     <div className="Drop_As">
                       <div className="question_Drop">
                         <span className="Queston_Drop" style={{}}>
-                          Câu hỏi {index + 1}:{" "}
+                          Question {index + 1}:{" "}
                         </span>
                         <span className="Queston_Drop_Title" style={{}}>
                           {item.questionText || "Không có dữ liệu"}
@@ -270,7 +272,7 @@ function Result5() {
                       </div>
                       <div className="Answer_Drop" style={{}}>
                         <span style={{ fontWeight: "normal" }}>
-                          <strong>Bạn trả lời: </strong>
+                          <strong>Your Answers: </strong>
                           {index !== 1 &&
                             questionsData.skin
                               .filter((item_) => item_.id === index + 1)[0]

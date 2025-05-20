@@ -17,32 +17,29 @@ const sliderData = [
   {
     title: (
       <p>
-        Chàm (Eczema)<sup style={{ fontSize: 12 }}>1,2</sup>
+        Eczema<sup style={{ fontSize: 12 }}>1,2</sup>
       </p>
     ),
     description: (
       <ul
         style={{
           margin: "20px",
-          textAlign: "justify",
+          textAlign: "left",
         }}
       >
         <li>
-          Mảng da đỏ, hình tròn như đồng xu{" "}
-          <sup style={{ fontSize: 12 }}>1,2</sup>.{" "}
+          Red coin-shaped plaques <sup style={{ fontSize: 12 }}>1,2</sup>.{" "}
         </li>
         <li>
-          Không có vùng da lành ở giữa<sup style={{ fontSize: 12 }}>2</sup>.
+          Most lack central clearing<sup style={{ fontSize: 12 }}>2</sup>.
         </li>
         <li>
-          {" "}
-          Da có thể sẫm màu hơn xung quanh vùng bị tổn thương
+          Coexisting hyperpigmentation
           <sup style={{ fontSize: 12 }}>2</sup>.
         </li>
-
         <li>
-          Vị trí thường gặp: cẳng chân, mu bàn tay và mặt ngoài của cánh tay.{" "}
-          <sup style={{ fontSize: 12 }}>2</sup>
+          Commonly appears on lower legs, dorsal hands, extensor surface of
+          arms.<sup style={{ fontSize: 12 }}>2</sup>
         </li>
       </ul>
     ),
@@ -61,18 +58,15 @@ const sliderData = [
   {
     title: (
       <p>
-        Vảy nến <sup style={{ fontSize: 12 }}>4</sup>
+        Psoriasis <sup style={{ fontSize: 12 }}>4</sup>
       </p>
     ),
     description: (
-      <ul style={{ margin: "20px" }}>
-        <li>Mảng đỏ.</li>
-        <li>Có vảy trắng bạc phủ trên bề mặt.</li>
-        <li> Trường hợp nặng có thể có mủ.</li>
-
-        <li>
-          Vị trí thường gặp: khuỷu tay, đầu gối, da đầu và vùng lưng dưới.
-        </li>
+      <ul style={{ margin: "20px", textAlign: "left" }}>
+        <li>Erythematous plaques.</li>
+        <li>Silvery scales.</li>
+        <li>Lesions may have pus in severe cases.</li>
+        <li>Typically, on elbows, knees, scalp and lumbosacral region.</li>
       </ul>
     ),
     ref: (
@@ -141,8 +135,10 @@ function Result2() {
         </div>
         <div className="section_left">
           {" "}
-          <p className="tilte_sick">Có thể bạn đang gặp bệnh</p>
-          <p className="sick">HẮC LÀO</p>
+          <p className="tilte_sick">
+            Based on the symptoms you described, you may have
+          </p>
+          <p className="sick">RINGWORM</p>
           <a
             href="https://www.canesten.com.vn/moi-dieu-ban-can-biet-ve-benh-hac-lao"
             target="blank"
@@ -154,9 +150,9 @@ function Result2() {
 
       {/* Slider Section */}
       <section className="slider">
-        <p className="content_1">BẠN CÓ BIẾT?</p>
+        <p className="content_1">DO YOU KNOW?</p>
         <p className="content_2">
-          Khác biệt giữa Hắc lào và các bệnh tương tự:
+          Difference between Ringworm & "lookalike" conditions:
         </p>
 
         <div className="slider-container">
@@ -191,13 +187,13 @@ function Result2() {
           {isOpen ? (
             <div className="Dropdown_result1">
               <p style={{ background: "#172bc1" }}>
-                XEM LẠI CÂU TRẢ LỜI <img src={arrow} alt="HẮC LÀO" />{" "}
+                REVIEW YOUR ANSWERS <img src={arrow} alt="HẮC LÀO" />{" "}
               </p>
             </div>
           ) : (
             <div className="Dropdown_result2">
               <p style={{ background: "#172bc1" }}>
-                XEM LẠI CÂU TRẢ LỜI <img src={arrow} alt="HẮC LÀO" />{" "}
+                REVIEW YOUR ANSWERS <img src={arrow} alt="HẮC LÀO" />{" "}
               </p>
             </div>
           )}
@@ -226,7 +222,7 @@ function Result2() {
                     <div className="Drop_As">
                       <div className="question_Drop">
                         <span className="Queston_Drop" style={{}}>
-                          Câu hỏi {index + 1}:{" "}
+                          Question {index + 1}:{" "}
                         </span>
                         <span className="Queston_Drop_Title" style={{}}>
                           {item.questionText || "Không có dữ liệu"}
@@ -234,7 +230,7 @@ function Result2() {
                       </div>
                       <div className="Answer_Drop" style={{}}>
                         <span style={{ fontWeight: "normal" }}>
-                          <strong>Bạn trả lời: </strong>
+                          <strong>Your Answers: </strong>
                           {index !== 1 &&
                             questionsData.skin
                               .filter((item_) => item_.id === index + 1)[0]

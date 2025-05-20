@@ -19,25 +19,19 @@ const sliderData = [
   {
     title: (
       <p>
-        Nhiễm nấm men<sup style={{ fontSize: 12 }}>1</sup>
+        Yeast infection<sup style={{ fontSize: 12 }}>1</sup>
       </p>
     ),
     description: (
       <ul
         style={{
           margin: "20px",
-          textAlign: "justify",
+          textAlign: "left",
         }}
       >
-        <li>
-          Xuất hiện các nốt nhỏ (tổn thương vệ tinh) kèm vùng da đỏ, nhưng không
-          có vùng lành ở trung tâm.{" "}
-        </li>
-        <li>Ở nam giới: phát ban có thể lan đến bìu và dương vật.</li>
-        <li>
-          {" "}
-          Thường gặp ở cả nam và nữ (khác với nấm bẹn hay gặp ở nam giới hơn).
-        </li>
+        <li>Satellite lesions and erythema without central clearing. </li>
+        <li>In males, the rash may involve the scrotum and penis.</li>
+        <li> Frequently also affects females unlike jock itch.</li>
       </ul>
     ),
     img: thumbslide1,
@@ -55,12 +49,12 @@ const sliderData = [
   {
     title: (
       <p>
-        Viêm da tiết bã <sup style={{ fontSize: 12 }}>1</sup>
+        Seborrheic dermatitis <sup style={{ fontSize: 12 }}>1</sup>
       </p>
     ),
     description: (
       <ul style={{ margin: "20px" }}>
-        <li>Da đỏ kèm theo vảy nhờn ở phía trên.</li>
+        <li>Greasy scales, erythematous at base.</li>
       </ul>
     ),
     ref: (
@@ -78,15 +72,12 @@ const sliderData = [
   {
     title: (
       <p>
-        Vảy nến <sup style={{ fontSize: 12 }}>1</sup>
+        Psoriasis <sup style={{ fontSize: 12 }}>1</sup>
       </p>
     ),
     description: (
       <ul style={{ margin: "20px" }}>
-        <li>
-          Xuất hiện ở các vùng ngoài háng và đùi, như khuỷu tay, đầu gối hoặc
-          lưng.
-        </li>
+        <li>Manifests in areas other than groin and thigh.</li>
       </ul>
     ),
     ref: (
@@ -104,20 +95,19 @@ const sliderData = [
   {
     title: (
       <p>
-        Viêm da nếp kẽ do vi khuẩn <sup style={{ fontSize: 12 }}>1,2</sup>
+        Erythrasma <sup style={{ fontSize: 12 }}>1,2</sup>
       </p>
     ),
     description: (
       <ul style={{ margin: "20px" }}>
         <li>
-          Mảng đỏ sẫm, ẩm ướt, có vảy nhẹ<sup style={{ fontSize: 12 }}>2</sup>.
+          Dark red, moist, scaly rash<sup style={{ fontSize: 12 }}>2</sup>.
         </li>
         <li>
-          Không có viền rõ ràng như nấm bẹn<sup style={{ fontSize: 12 }}>1</sup>
-          .
+          Lacks an active border<sup style={{ fontSize: 12 }}>1</sup>.
         </li>
         <li>
-          Thường xuất hiện ở kẽ ngón chân, sau đó lan đến vùng háng
+          Observed in toe webs and later in groin
           <sup style={{ fontSize: 12 }}>2</sup>.
         </li>
       </ul>
@@ -198,8 +188,10 @@ function Result4() {
         </div>
         <div className="section_left">
           {" "}
-          <p className="tilte_sick">Có thể bạn đang gặp bệnh</p>
-          <p className="sick">NẤM BẸN</p>
+          <p className="tilte_sick">
+            Based on the symptoms you described, you may have
+          </p>
+          <p className="sick">JOCK ITCH</p>
           <a
             href="https://www.canesten.com.vn/moi-dieu-ban-can-biet-ve-benh-nam-ben"
             target="blank"
@@ -211,9 +203,9 @@ function Result4() {
 
       {/* Slider Section */}
       <section className="slider">
-        <p className="content_1">BẠN CÓ BIẾT?</p>
+        <p className="content_1">DO YOU KNOW?</p>
         <p className="content_2" style={{}}>
-          Sự khác biệt giữa Nấm bẹn và các bệnh ngoài da tương tự:
+          Difference between Jock Itch & "lookalike" conditions:
         </p>
 
         <div className="slider-container_3">
@@ -248,13 +240,13 @@ function Result4() {
           {isOpen ? (
             <div className="Dropdown_result1">
               <p style={{ background: "#172bc1" }}>
-                XEM LẠI CÂU TRẢ LỜI <img src={arrow} alt="NẤM BẸN" />{" "}
+                REVIEW YOUR ANSWERS <img src={arrow} alt="NẤM BẸN" />{" "}
               </p>
             </div>
           ) : (
             <div className="Dropdown_result2">
               <p style={{ background: "#172bc1" }}>
-                XEM LẠI CÂU TRẢ LỜI <img src={arrow} alt="NẤM BẸN" />{" "}
+                REVIEW YOUR ANSWERS <img src={arrow} alt="NẤM BẸN" />{" "}
               </p>
             </div>
           )}
@@ -283,7 +275,7 @@ function Result4() {
                     <div className="Drop_As">
                       <div className="question_Drop">
                         <span className="Queston_Drop" style={{}}>
-                          Câu hỏi {index + 1}:{" "}
+                          Question {index + 1}:{" "}
                         </span>
                         <span className="Queston_Drop_Title" style={{}}>
                           {item.questionText || "Không có dữ liệu"}
@@ -291,7 +283,7 @@ function Result4() {
                       </div>
                       <div className="Answer_Drop" style={{}}>
                         <span style={{ fontWeight: "normal" }}>
-                          <strong>Bạn trả lời: </strong>
+                          <strong>Your Answers: </strong>
                           {index !== 1 &&
                             questionsData.skin
                               .filter((item_) => item_.id === index + 1)[0]

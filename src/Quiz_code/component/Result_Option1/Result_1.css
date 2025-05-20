@@ -63,7 +63,7 @@
   margin: 0 10px;
   color: var(--red-color);
   background-color: white;
- 
+
   width: 22.5vw !important;
   height: 761px;
   position: relative;
@@ -494,6 +494,7 @@
   .Drop_As {
     padding-bottom: 10px;
     padding-top: 10px;
+    margin-top: 15px;
   }
   .Queston_Drop {
     font-weight: bold;
@@ -531,11 +532,11 @@
   .Dropdown_result1 p {
     width: 70vw;
     height: 60px;
-    font-size: 20px;
+    font-size: 16px;
   }
   .Dropdown_result1 img {
-    width: 20px;
-    height: 13px;
+    width: 18px;
+    height: 12px;
     margin-top: -2px;
   }
   .Dropdown_result2 {
@@ -544,11 +545,12 @@
   .Dropdown_result2 p {
     width: 70vw;
     height: 60px;
-    font-size: 20px;
+    font-size: 16px;
   }
   .Dropdown_result2 img {
-    width: 20px;
-    height: 13px;
+    width: 18px;
+    height: 12px;
+    margin-left: 21px;
   }
   .Xem_KQ {
     margin-bottom: -10px;
