@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import "./Home_page.css";
-import start from "../../img/btn Start.png";
+import start from "../../img/Eng - Export/Fungus/btn Start.png";
 const Home_page = () => {
   const navigate = useNavigate();
   return (

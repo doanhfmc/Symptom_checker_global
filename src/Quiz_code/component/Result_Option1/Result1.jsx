@@ -6,7 +6,7 @@ import thumbslide1 from "../../../img/Thumb_Slide/02 slider-cham.jpg";
 import thumbslide2 from "../../../img/Thumb_Slide/02 slider-thucung-viemdatietba.jpg";
 import Arrow_prev from "../../../img/Button_img/slider icon 2.png";
 import Arrow_next from "../../../img/Button_img/slider icon.png";
-import Btn_Sol from "../../../img/Button_img/button tim hieu.png";
+import Btn_Sol from "../../../img/Eng - Export/Fungus/button tim hieu.png";
 import arrow from "../../../img/Button_img/mui ten.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";

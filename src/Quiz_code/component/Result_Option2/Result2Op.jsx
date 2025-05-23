@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useBearStore } from "../../store/app.js";
 import "./ResultOp.css";
-import CTA from "../../../img/Gyne/CTA 1.png";
+import CTA from "../../../img/Eng - Export/GYNE/CTA 1.png";
 import img from "../../../img/Gyne/thumb viem am dao 960x560.png";
 import arrow from "../../../img/Button_img/mui ten.png";
 import icon_center from "../../../img/Gyne/icon ban co biet - viem am dao do vi khuan.png";

@@ -5,10 +5,10 @@ import { questionsData } from "../Data.js";
 import "./Question.css";
 import { useBearStore } from "../store/app.js";
 import ReactGA from "react-ga4";
-import Next from "../../img/btn red.png";
-import DisabledNext from "../../img/btn.png";
-import Yes_sel from "../../img/03 _ Co.png";
-import No_sel from "../../img/03 _ Khong.png";
+import Next from "../../img/Eng - Export/Fungus/btn red.png";
+import DisabledNext from "../../img/Eng - Export/Fungus/btn.png";
+import Yes_sel from "../../img/Eng - Export/Fungus/03 _ Co.png";
+import No_sel from "../../img/Eng - Export/Fungus/03 _ Khong.png";
 import arrow from "../../img/Button_img/mui ten.png";
 
 function Question({ condition }) {
