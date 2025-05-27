@@ -23,6 +23,7 @@ const Result3Op = () => {
               alt="Nhiễm trùng đường tiểu - một bệnh lý khá phổ biến"
             />
           </div>
+          {/* Header layout */}
           <div className="text_result_container">
             {" "}
             <span className="text_result_123">
@@ -38,7 +39,7 @@ const Result3Op = () => {
             </a>
           </div>
         </div>
-
+        {/* Answers */}
         <div className="Dropdown_result_total">
           <div onClick={toggleDropdown} className="Info1">
             {isOpen ? (
@@ -93,12 +94,6 @@ const Result3Op = () => {
                             <strong>Your Answers: </strong>
                             {item.selectedAnswers2.join(". ") ||
                               "Chưa chọn đáp án"}
-
-                            {/* {questionsData.skin
-                            .filter((item_) => item_.id === index + 1)[0]
-                            .options.filter(
-                              (op) => op._id === item.selectedAnswers.join(",")
-                            )[0]?.text || "Chưa chọn đáp án"} */}
                           </span>
                         </div>
                       </div>
@@ -106,7 +101,7 @@ const Result3Op = () => {
                   ))
                 ) : (
                   <p style={{ textAlign: "center", padding: "20px" }}>
-                    Không có dữ liệu để hiển thị.
+                    No data
                   </p>
                 )}
               </div>

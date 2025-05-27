@@ -1,5 +1,5 @@
 import { create } from "zustand";
-
+// Zustand store for managing quiz data selection
 export const useBearStore = create((set) => ({
   dataSelect: [],
   increasePopulation: (data) =>

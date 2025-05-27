@@ -38,6 +38,7 @@ import img282 from "../img/Gyne/Q8 co mui hoi la.png";
 import img283 from "../img/Gyne/Q8 Nuoc tieu binh thuong.png";
 
 export const questionsData = {
+  // This is the data structure for the quiz questions and options of the Skin fungus.  Line 42-237
   skin: [
     {
       id: 1,
@@ -234,6 +235,7 @@ export const questionsData = {
       ],
     },
   ],
+  // This is the data structure for the quiz questions and options of the Gynecological infections. Line 239-360
   intimate: [
     {
       id: 1,

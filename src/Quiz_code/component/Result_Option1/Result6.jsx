@@ -13,6 +13,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { questionsData } from "../../Data.js";
 
+// Data slide Line 17-84
 const sliderData = [
   {
     title: <p className="Title6">Erythrasma </p>,
@@ -90,7 +91,6 @@ function Result6() {
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
-  //   const answers = location.state?.answers || [];
   useEffect(() => {
     const handleBeforeUnload = (event) => {
       event.preventDefault();
@@ -109,21 +109,21 @@ function Result6() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2, // ✅ Hiển thị 2 slide mỗi lần
+    slidesToShow: 2, // ✅ Show 2 slides on page
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 3000,
-    arrows: true, // ✅ Hiển thị nút điều hướng mặc định
+    arrows: true, // ✅ Show navigation arrows
     prevArrow: <img className="prev-button" src={Arrow_prev} alt="Prev" />,
     nextArrow: <img className="next-button" src={Arrow_next} alt="Next" />,
     responsive: [
       {
-        breakpoint: 768, // 📱 Khi màn hình nhỏ hơn 768px (mobile)
+        breakpoint: 768, // 📱  768px (mobile)
         settings: {
-          slidesToShow: 1, // ❗ Hiển thị 1 slide
+          slidesToShow: 1, // ❗ Show 1 slide on mobile
           slidesToScroll: 1,
-          arrows: true, // Ẩn nút điều hướng trên mobile nếu cần
-          dots: true, // Hiển thị chấm tròn để chuyển slide
+          arrows: true, // show arrows on mobile
+          dots: true, // Show dots on mobile
         },
       },
     ],
@@ -251,12 +251,6 @@ function Result6() {
                               .options.filter((op) =>
                                 item?.selectedAnswers.includes(op._id)
                               )[0]?.text}
-
-                          {/* {questionsData.skin
-                            .filter((item_) => item_.id === index + 1)[0]
-                            .options.filter(
-                              (op) => op._id === item.selectedAnswers.join(",")
-                            )[0]?.text || "Chưa chọn đáp án"} */}
                         </span>
                       </div>
                     </div>
@@ -269,14 +263,6 @@ function Result6() {
           )}
         </div>
       </div>
-      {/* Footer */}
-      {/* <footer className="footer">
-        <p>
-          This is a guide on conditions you may have and recommendations for
-          suitable treatments. For more accurate diagnosis, please seek advice
-          from your healthcare professional.
-        </p>
-      </footer> */}
     </div>
   );
 }

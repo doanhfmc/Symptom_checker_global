@@ -33,13 +33,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-
-  /* height: 280px; */
-  /* background-repeat: no-repeat; */
-  /* background-position: center;
- 
- */
-
   background-size: cover;
 }
 .Next_2 {
@@ -107,7 +100,7 @@
   justify-content: center;
 }
 .three_column1 {
-  grid-template-columns: repeat(2, 1fr); /* 2 đáp án mỗi hàng */
+  grid-template-columns: repeat(2, 1fr);
 
   display: grid;
   gap: 80px;
@@ -314,7 +307,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .three2-columns {
-    grid-template-columns: repeat(2, 1fr); /* 2 đáp án mỗi hàng */
+    grid-template-columns: repeat(2, 1fr);
     width: auto;
     display: grid;
     gap: 10px;

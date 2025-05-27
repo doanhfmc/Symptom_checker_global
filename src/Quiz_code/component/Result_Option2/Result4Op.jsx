@@ -23,6 +23,7 @@ const Result4Op = () => {
               alt="VIÊM ÂM ĐẠO DO VI KHUẨN, VIÊM NẤM ÂM ĐẠO"
             />
           </div>
+          {/* Header layout */}
           <div className="text_result_container">
             {" "}
             <span className="text_result">
@@ -41,7 +42,7 @@ const Result4Op = () => {
             </a>
           </div>
         </div>
-
+        {/* Answers */}
         <div className="Dropdown_result_total">
           <div onClick={toggleDropdown} className="Info1">
             {isOpen ? (
@@ -102,12 +103,6 @@ const Result4Op = () => {
                             <strong>Your Answers: </strong>
                             {item.selectedAnswers2.join(". ") ||
                               "Chưa chọn đáp án"}
-
-                            {/* {questionsData.skin
-                            .filter((item_) => item_.id === index + 1)[0]
-                            .options.filter(
-                              (op) => op._id === item.selectedAnswers.join(",")
-                            )[0]?.text || "Chưa chọn đáp án"} */}
                           </span>
                         </div>
                       </div>
@@ -115,7 +110,7 @@ const Result4Op = () => {
                   ))
                 ) : (
                   <p style={{ textAlign: "center", padding: "20px" }}>
-                    Không có dữ liệu để hiển thị.
+                    No data
                   </p>
                 )}
               </div>

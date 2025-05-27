@@ -25,6 +25,7 @@ const Result1Op = () => {
           </div>
           <div className="text_result_container">
             {" "}
+            {/* Header layout*/}
             <span className="text_result_123">
               Based on the symptoms you described, you may have{" "}
             </span>
@@ -38,6 +39,7 @@ const Result1Op = () => {
             </a>
           </div>
         </div>
+        {/* Center layout */}
         <div className="center_container">
           <div className="img_leftRS">
             {" "}
@@ -63,6 +65,7 @@ const Result1Op = () => {
             </p>
           </div>
         </div>
+        {/* Answers */}
         <div className="Dropdown_result_total">
           <div onClick={toggleDropdown} className="Info1">
             {isOpen ? (
@@ -128,7 +131,7 @@ const Result1Op = () => {
                   ))
                 ) : (
                   <p style={{ textAlign: "center", padding: "20px" }}>
-                    Không có dữ liệu để hiển thị.
+                    No data
                   </p>
                 )}
               </div>

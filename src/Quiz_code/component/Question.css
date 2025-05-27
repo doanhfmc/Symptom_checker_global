@@ -1,14 +1,9 @@
 .question_2 {
   display: flex;
   flex-direction: column;
-
   align-items: stretch;
   justify-content: space-between;
   font-size: 40px;
-
-  /* position: fixed;
-  top: 50px;
-  left: 50px; */
 }
 
 .question_2 h3 {
@@ -30,16 +25,16 @@
 }
 
 .two-columns {
-  grid-template-columns: repeat(2, 1fr); /* 2 đáp án mỗi hàng */
+  grid-template-columns: repeat(2, 1fr);
   width: 850px;
 }
 
 .three-columns {
-  grid-template-columns: repeat(3, 1fr); /* 3 đáp án mỗi hàng */
+  grid-template-columns: repeat(3, 1fr);
   width: 1250px;
 }
 .one-columns {
-  grid-template-columns: repeat(2, 1fr); /* 2 đáp án mỗi hàng */
+  grid-template-columns: repeat(2, 1fr);
 }
 .option {
   padding: 10px;
@@ -71,7 +66,7 @@
   width: 400px;
   font-size: 24px;
   padding-top: 80px;
-  color: black; /* Để có khoảng cách giữa ảnh và nội dung */
+  color: black;
 }
 .activeBG {
   display: flex;
@@ -113,7 +108,7 @@
   width: 400px;
   min-height: 200px;
   padding-top: 100px;
-  color: black; /* Để có khoảng cách giữa ảnh và nội dung */
+  color: black;
 }
 .content-box3 {
   border: none;
@@ -182,10 +177,10 @@
   height: 151px;
 
   position: absolute;
-  top: -38px; /* Đưa hình tròn lên cao hơn */
+  top: -38px;
   left: 78%;
   transform: translateX(-50%);
-  z-index: 2; /* Đảm bảo ảnh luôn nằm trên viền hộp */
+  z-index: 2;
 }
 
 .circle-img1 {
@@ -193,10 +188,10 @@
   height: 151px;
 
   position: absolute;
-  top: -38px; /* Đưa hình tròn lên cao hơn */
+  top: -38px;
   left: 66%;
   transform: translateX(-50%);
-  z-index: 2; /* Đảm bảo ảnh luôn nằm trên viền hộp */
+  z-index: 2;
 }
 
 .Ref {
@@ -278,7 +273,6 @@
 .Container_Q3 img:hover {
   cursor: pointer;
 }
-/* Table */
 
 /* 📱 Responsive cho Mobile */
 @media (max-width: 768px) {

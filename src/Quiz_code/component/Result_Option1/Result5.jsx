@@ -14,6 +14,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { questionsData } from "../../Data.js";
 
+// Data slide Line 18-124
 const sliderData = [
   {
     title: (
@@ -129,7 +130,6 @@ function Result5() {
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
-  //   const answers = location.state?.answers || [];
   useEffect(() => {
     const handleBeforeUnload = (event) => {
       event.preventDefault();
@@ -148,21 +148,21 @@ function Result5() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3, // ✅ Hiển thị 2 slide mỗi lần
+    slidesToShow: 3, // ✅ Show 3 slide on page
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 3000,
-    arrows: true, // ✅ Hiển thị nút điều hướng mặc định
+    arrows: true, // ✅ Show default navigation buttons
     prevArrow: <img className="prev-button" src={Arrow_prev} alt="Prev" />,
     nextArrow: <img className="next-button" src={Arrow_next} alt="Next" />,
     responsive: [
       {
-        breakpoint: 768, // 📱 Khi màn hình nhỏ hơn 768px (mobile)
+        breakpoint: 768, // 📱 Mobile
         settings: {
-          slidesToShow: 1, // ❗ Hiển thị 1 slide
+          slidesToShow: 1, // ❗ Show 1 slide on page
           slidesToScroll: 1,
-          arrows: true, // Ẩn nút điều hướng trên mobile nếu cần
-          dots: true, // Hiển thị chấm tròn để chuyển slide
+          arrows: true, // On-off arrows button on mobile if any
+          dots: true,
         },
       },
     ],

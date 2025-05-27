@@ -37,29 +37,6 @@ const Layout = () => {
 
   return (
     <div className="layout_wrapper">
-      {/* <header className="banner">
-       
-        <div className="top-nav">
-          <div className="top-links">
-            <a href="#">Về chúng tôi</a>
-            <a href="#">Câu hỏi thường gặp</a>
-          </div>
-          <div className="search-icon">🔍</div>
-        </div>
-
- 
-        <div className="main-nav">
-          <img src="/logo-left.png" alt="Left Logo" className="left-logo" />
-
-          <nav className="menu">
-            <a href="#">Chăm sóc da thân mình ▼</a>
-            <a href="#">Chăm sóc vùng kín ▼</a>
-            <a href="#">Sản phẩm</a>
-          </nav>
-
-          <img src="/bayer-logo.png" alt="Bayer Logo" className="right-logo" />
-        </div>
-      </header> */}
       <p
         style={{
           color: "#c01b31",
@@ -71,11 +48,13 @@ const Layout = () => {
       >
         Symptom checker
       </p>
+      {/* Main layout */}
       <main>
         <Suspense fallback={<p></p>}>
           <Outlet />
         </Suspense>
       </main>
+      {/* Footer layout */}
       <footer className="footer_layout">
         <div className="line_layout"></div>
         <div className="footer_content">

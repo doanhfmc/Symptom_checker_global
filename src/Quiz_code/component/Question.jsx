@@ -57,8 +57,6 @@ function Question({ condition }) {
       default:
         break;
     }
-
-    // setAnswers([...answers, answer]);
   };
 
   useEffect(() => {
@@ -98,6 +96,7 @@ function Question({ condition }) {
         behavior: "smooth",
       });
     }, 100);
+    /* Logic navigation */
     switch (answersid) {
       case 20:
         break;
@@ -164,7 +163,7 @@ function Question({ condition }) {
                       : "container2"
                   } `}
                   key={index}
-                  onClick={() => handleAnswer(option)} // Thêm logic sự kiện click
+                  onClick={() => handleAnswer(option)}
                 >
                   <img
                     className={`${

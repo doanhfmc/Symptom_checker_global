@@ -6,11 +6,9 @@ body {
   background-color: white;
   font-size: 20px;
   font-weight: 400px;
-  /* min-height: 100vh; */
   width: 100vw;
-  font-family: "Verlag", sans-serif;
+  font-family: "Verlag-book", sans-serif; /* You can change the font family here */
   font-optical-sizing: auto;
-
   font-style: normal;
 }
 * {

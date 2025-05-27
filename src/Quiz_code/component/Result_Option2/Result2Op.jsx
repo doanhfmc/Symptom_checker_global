@@ -23,6 +23,7 @@ const Result2Op = () => {
               alt={`Viêm âm đạo do vi khuẩn gây ảnh hưởng khí hư và sức khỏe "cô bé"`}
             />
           </div>
+          {/* Header layout */}
           <div className="text_result_container">
             {" "}
             <span className="text_result_123">
@@ -38,6 +39,7 @@ const Result2Op = () => {
             </a>
           </div>
         </div>
+        {/* Center layout */}
         <div className="center_container2">
           <div className="img_leftRS">
             {" "}
@@ -65,6 +67,7 @@ const Result2Op = () => {
             </p>
           </div>
         </div>
+        {/* Answers */}
         <div className="Dropdown_result_total">
           <div onClick={toggleDropdown} className="Info1">
             {isOpen ? (
@@ -132,7 +135,7 @@ const Result2Op = () => {
                   ))
                 ) : (
                   <p style={{ textAlign: "center", padding: "20px" }}>
-                    Không có dữ liệu để hiển thị.
+                    No data
                   </p>
                 )}
               </div>

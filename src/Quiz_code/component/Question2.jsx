@@ -15,7 +15,6 @@ function Question2({ condition }) {
   const { increasePopulation, dataSelect } = useBearStore();
   const [currentQuestion, setCurrentQuestion] = useState(1);
   const question = questionsData[condition][currentQuestion - 1];
-  // const [answers, setAnswers] = useState([]);
   const [answers_select, setAnswers_select] = useState([]);
   const [answersid, setAnswerid] = useState([]);
   const [type, setType] = useState("single");
@@ -70,8 +69,6 @@ function Question2({ condition }) {
       default:
         break;
     }
-
-    // setAnswers([...answers, answer]);
   };
 
   const nextPage = () => {
@@ -98,7 +95,7 @@ function Question2({ condition }) {
       });
     }, 100);
   };
-
+  // Logic for navigation based on answers
   useEffect(() => {
     if (dataSelect.length >= 5) {
       if (!dataSelect[1]?.answer1?.includes(16)) {
@@ -262,7 +259,7 @@ function Question2({ condition }) {
                           : "img_blue"
                       }`}
                     ></div>
-                    {/* {question.id !== 5 && question.id !== 2 && ( */}
+
                     <img
                       className="img_as2"
                       key={index}
@@ -311,7 +308,7 @@ function Question2({ condition }) {
                             : "img_blue"
                         }`}
                       ></div>
-                      {/* {question.id !== 5 && question.id !== 2 && ( */}
+
                       <img
                         className="img_as2"
                         key={index}

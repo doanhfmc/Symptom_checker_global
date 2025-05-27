@@ -6,11 +6,11 @@ const Home_page = () => {
   return (
     <div className="">
       <div className="Container">
-        <h1 style={{ display: "none" }}></h1>
         <div className="container_all">
           <div className="header_first"></div>
           <div className="footer_first">
             <div className="footer_first_content">
+              {/* content first above button"start"*/}
               <p>
                 Welcome to your personal{" "}
                 <strong>Canesten® Symptom Checker.</strong> Experiencing
@@ -27,6 +27,7 @@ const Home_page = () => {
                 <br />
               </p>
             </div>
+            {/* button start */}
             <div className="footer_first_button">
               <img
                 src={start}
