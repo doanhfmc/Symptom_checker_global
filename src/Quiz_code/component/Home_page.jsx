@@ -18,7 +18,7 @@ const Home_page = () => {
                 just want some information and treatment options?
                 <br />
                 <br />
-                The <strong>Canesten® Symptom Checker</strong> swill help you
+                The <strong>Canesten® Symptom Checker</strong> will help you
                 better understand your symptoms and help guide you on a
                 treatment to help get you back to you. <br /> <br />
                 If you are under 18 or over 60, it is recommended you speak to

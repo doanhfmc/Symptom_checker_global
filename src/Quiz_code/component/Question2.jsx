@@ -328,7 +328,7 @@ function Question2({ condition }) {
               <p>
                 Am Fam Physician. 2018 Mar 1;97(5):321-329; Sobel JD. Lancet
                 2007;369:1961-71; Farr A et al. Mycoses 2021;64:583-602; CDC
-                2022. Vaginal candidiasis.
+                2022. Vaginal candidiasis.{" "}
                 <a
                   style={{
                     textDecoration: "none",

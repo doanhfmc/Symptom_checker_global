@@ -124,7 +124,7 @@
   text-align: start;
   border: none;
   background: white;
-  font-family: "Verlag", sans-serif;
+  font-family: "Verlag-book", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
@@ -134,7 +134,7 @@
   text-align: center;
   border: none;
   background: white;
-  font-family: "Verlag", sans-serif;
+  font-family: "Verlag-book", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }

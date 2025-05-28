@@ -55,7 +55,7 @@ const sliderData = [
   {
     title: (
       <p className="Title6">
-        CTo prevent Erythrasma <sup style={{ fontSize: 12 }}>13</sup>
+        To prevent Erythrasma <sup style={{ fontSize: 12 }}>13</sup>
       </p>
     ),
     description: (

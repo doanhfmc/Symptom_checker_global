@@ -55,8 +55,9 @@ const Result1Op = () => {
                   70-75% of women of reproductive age experience Vulvovaginal
                   Candidiasis (VVC) at least once in their life,
                 </span>{" "}
-                hich can be difficult to treat as 40-45% recur at least once and
-                5-8% of patients develop persistent vaginitis (≥ 4 times/year)
+                which can be difficult to treat as 40-45% recur at least once
+                and 5-8% of patients develop persistent vaginitis (≥ 4
+                times/year)
                 <sup>2</sup>.
               </span>
             </p>
